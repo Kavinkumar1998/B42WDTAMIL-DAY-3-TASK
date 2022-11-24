@@ -1,0 +1,85 @@
+//question 1
+//json itereates in all for loops:
+//1. normal for loop;
+var arr=[
+    {
+"name":"kavin",
+"age":"25"
+},
+{
+    "name":"ajith",
+"age":"25"
+},
+{
+    "name":"bala",
+"age":"25"
+},
+{
+    "name":"karuppu",
+   "age":"25"
+} ]
+ for(var i=0;i<arr.length;i++){
+     console.log(arr[i].name,arr[i].age);
+  }
+ // ---------------------------------------------------------
+//2. for in loop;
+var arr=[
+    {
+"name":"kavin",
+"age":"25"
+},
+{
+    "name":"ajith",
+"age":"25"
+},
+{
+    "name":"bala",
+"age":"25"
+},
+{
+    "name":"karuppu",
+   "age":"25"
+} ]
+ for(let index in arr)
+{
+  console.log(arr[index])
+}
+//--------------------------------------------------------------
+//3. for of loop
+//-------------------------------
+//4. for each loop;
+var arr=[
+    {
+"name":"kavin",
+"age":"25"
+},
+{
+    "name":"ajith",
+"age":"25"
+},
+{
+    "name":"bala",
+"age":"25"
+},
+{
+    "name":"karuppu",
+   "age":"25"
+} ]
+arr.forEach(function1);
+function function1(currentValue, index) {
+   console.log(currentValue);
+}
+
+//----------------------------------------------------------------------------------
+//question 2. resume in a json format
+var resume={
+    "name":"kavin",
+    "age":"25",
+    "location":"maduai",
+    "qualification":"1OTH ,12TH",
+    "ENGINEERING DEGREE":"MECHANICAL_ENGINEERING DEGREE",
+    "passed out":"2019",
+    "experience":"2 years in yyyy company",
+    "co-caricular_activities":"cricket"
+}
+console.log(resume);
